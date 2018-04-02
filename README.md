@@ -12,7 +12,7 @@ Once the communication plan is imported, you need to create a group in xMatters 
 
 To produce a fully working two way integration with xMatters, configuring EasyVista correctly is key. The configuration with EasyVista is a bit more complex comapred to xMatters. Rest assured, we will go through each configuration step by step in this lab.
 
-First and foremost, you must first create an API REST Connection with EasyVista. You can do that by clicking **Administration** < **REST** < **Connections**
+1. First and foremost, you must first create an API REST Connection with EasyVista. You can do that by clicking **Administration** < **REST** < **Connections**
 
 
 
@@ -33,7 +33,7 @@ Click the **+** button next to **Connections** and add a new connection
 
 
 
-You can call the connection **xM Connection**, the Authentication Method can be **Basic** and in the **Service Url** field, include the name of your instance. User Name Authentication can be any user in xMatters that has the **REST Web Services User** roles
+You can call the connection **xM Connection**, the Authentication Method can be **Basic** and in the **Service Url** field, include the name of your instance. User Name Authentication can be any user in xMatters that has the **REST Web Services User** roles. In this example, I have created a user specifically for this demo with the username "easyvista".
 
 
 
@@ -41,4 +41,9 @@ You can call the connection **xM Connection**, the Authentication Method can be 
     <img src="images/roles.png">
 </kbd>
 
+
+Once this configuration is set up, you can click **Save**
+
+
+2. The next thing we'll need to do is edit your current workflow so EasyVista knows how and when to trigger an event in xMatters. In this example, I am editing the workflow **Incident:Database**
 
