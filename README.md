@@ -1,5 +1,7 @@
 # xMatters + EasyVista Two Way Integration
 
+The purpose of this xM lab is to set up a functional, two way integration between xMatters and EasyVista
+
 # Prerequisites
 In order to produce a fully working integration you must have a instance of xMatters and EasyVista and basic familiarity with SQL and JavaScript
 
