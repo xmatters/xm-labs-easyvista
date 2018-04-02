@@ -12,8 +12,31 @@ Once the communication plan is imported, you need to create a group in xMatters 
 
 To produce a fully working two way integration with xMatters, configuring EasyVista correctly is key. The configuration with EasyVista is a bit more complex comapred to xMatters. Rest assured, we will go through each configuration step by step in this lab.
 
+
+### Creating a Service
+
+1. The fist thing we'll need to do is create a service in xMatters. We'll do this by going to **Administration** < **REST** < **Service**.
+
+
+<kbd>
+    <img src="images/service.png">
+</kbd>
+
+
+
+
+Click the **+** button next to **Services** and configure the service like so:
+
+<kbd>
+    <img src="images/service_edit.png">
+</kbd>
+
+Call the Service Name **xMatters**, set the Authentication Method the **Basic** and the Service Url should be the URL to your xMatters instance name. Click **Save**
+
+
 ### Creating a REST Connection
-1. First and foremost, you must first create an API REST Connection with EasyVista. You can do that by clicking **Administration** < **REST** < **Connections**
+
+2. Next you must first create an API REST Connection with EasyVista. You can do that by clicking **Administration** < **REST** < **Connections**
 
 
 
@@ -47,7 +70,17 @@ Once this configuration is set up, you can click **Save**
 
 ### Creating a Resource
 
-Next, we'll need to create a Resource in EasyVista
+2. Next, we'll need to create a **Resource** in EasyVista. We will do this by going to **Administration** < **Rest** < **Resources**. 
+
+<kbd>
+    <img src="images/resources.png">
+</kbd>
+
+Click the **+** button next to **Resources**. You can call the **label** whatever you want; I have called it **xM Resource**, the service name will be whatever you called your service above, in my case it's **xMatters** and the **Connection Name** will be whatever you named your REST connection above (in my case, it's xM Connection)
+
+<kbd>
+    <img src="images/edit_resources.png">
+</kbd>
 
 
 3. The next thing we'll need to do is edit your current workflow so EasyVista knows how and when to trigger an event in xMatters. In this example, I am editing the workflow **Incident:Database**. 
@@ -58,6 +91,8 @@ To add REST xM Connection we just created, click into **REST ACTIONS** and drag 
     <img src="images/workflow_editor.png">
 </kbd>
 
+
+**TODO
 
 
 <kbd>
