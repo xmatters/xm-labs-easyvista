@@ -14,4 +14,8 @@ To produce a fully working two way integration with xMatters, configuring EasyVi
 
 First and foremost, you must first create an API REST Connection with EasyVista. You can do that by clicking **Administration** < **REST** < **Connections**
 
+<kbd>
+    <img src="images/rest.png">
+</kbd>
+
 
