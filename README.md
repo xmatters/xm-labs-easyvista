@@ -12,7 +12,7 @@ Once the communication plan is imported, you need to create a group in xMatters 
 
 To produce a fully working two way integration with xMatters, configuring EasyVista correctly is key. The configuration with EasyVista is a bit more complex comapred to xMatters. Rest assured, we will go through each configuration step by step in this lab.
 
-***Creating a REST Connection***
+### Creating a REST Connection
 1. First and foremost, you must first create an API REST Connection with EasyVista. You can do that by clicking **Administration** < **REST** < **Connections**
 
 
@@ -45,7 +45,7 @@ You can call the connection **xM Connection**, the Authentication Method can be 
 
 Once this configuration is set up, you can click **Save**
 
-***Creating a Resource***
+### Creating a Resource
 
 Next, we'll need to create a Resource in EasyVista
 
