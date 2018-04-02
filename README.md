@@ -24,6 +24,7 @@ Click on **Edit Endpoints** and add the your endpoint to the list in your instac
 
 ***Note*** *the user must have the REST API use profile in EasyVista* in this case, I created a user in EasyVista named **RESTAPI** with the *REST API* role. If you're not sure how to do this, you can go [here](https://wiki.easyvista.com/xwiki/bin/view/Documentation/WebService+REST#HBestPractice) and click on **Best Practice**
 
+### Create a Group in xMatters
 Once the communication plan is imported, you need to create a group in xMatters (I.E "EasyVistaDemo") and add yourself to that group.
 
 # Configuring EasyVista
