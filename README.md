@@ -77,14 +77,14 @@ Once this configuration is set up, you can click **Save**
 
 Click the **+** button next to **Resources**. You can call the **label** whatever you want; I have called it **xM Resource**, the service name will be whatever you called your service above, in my case it's **xMatters** and the **Connection Name** will be whatever you named your REST connection above (in my case, it's xM Connection). The uri is how EasyVista will trigger the xMatters integration. This can be found by heading to your xMatters instance, clicking on **Developer**, next to your **EasyVista** communication plan, click **Edit** and then **Integration Builder**.
 
-kbd>
+<kbd>
     <img src="images/edit_comm.png">
 </kbd>
 
-Click on **Inbound integration** and then click on **New Incident** and the bottom you'll find the URL to trigger the integration which you will put in the uri field. ***Note**: do not enter the entire URL, only the URL that is followed by **.com** starting with **/api/.../etc**
+Click on **Inbound integration** and then click on **New Incident** and the bottom you'll find the URL to trigger the integration which you will put in the uri field. ***Note: do not enter the entire URL, only the URL that is followed by *** **.com** starting with **/api/.../etc**
 
 
-kbd>
+<kbd>
     <img src="images/trigger.png">
 </kbd>
 
