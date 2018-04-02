@@ -107,7 +107,7 @@ Click on **Inbound integration** and then click on **New Incident** and the bott
     <img src="images/trigger.png">
 </kbd>
 
-In the content, you'll want to add the following xMatters JSON payload: the `recipients` value is going to be the group you have created in xMatters that you are trying to target. In my case, the group name is **EasyVistaDemo**
+In the content field, you'll want to add the following xMatters JSON payload. ***Note** the `recipients` value is going to be the group you have created in xMatters that you are trying to target. In my case, the group name is **EasyVistaDemo**
 
 ``` {
   "properties": 
