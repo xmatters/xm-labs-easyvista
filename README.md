@@ -3,8 +3,26 @@
 # Prerequisites
 In order to produce a fully working integration you must have a instance of xMatters and EasyVista and basic familiarity with SQL and JavaScript
 
-# Getting Started
-To get started with the integration with EasyVista, you must first [import](https://help.xmatters.com/OnDemand/xmodwelcome/communicationplanbuilder/exportcommplan.htm) the **EasyVista.zip** communication plan attached. 
+# Configuring xMatters
+
+### Importing the Communication Plan
+To get started with the integration with EasyVista, you must first [import](https://help.xmatters.com/OnDemand/xmodwelcome/communicationplanbuilder/exportcommplan.htm) the **EasyVista.zip** communication plan attached into your instance of xMatters. 
+
+### Creating an Endpoint
+
+Once the communication plan is imported, we'll need to create an Endpoint so xMatters can talk to EasyVista. We'll do that by navigating to the integration builder. 
+
+<kbd>
+    <img src="images/edit_comm.png">
+</kbd>
+
+Click on **Edit Endpoints** and add the your endpoint to the list in your instace. 
+
+<kbd>
+    <img src="images/endpoint.png">
+</kbd>
+
+***Note*** *the user must have the REST API use profile in EasyVista* in this case, I created a user in EasyVista named **RESTAPI** with the *REST API* role. If you're not sure how to do this, you can go [here](https://wiki.easyvista.com/xwiki/bin/view/Documentation/WebService+REST#HBestPractice) and click on **Best Practice**
 
 Once the communication plan is imported, you need to create a group in xMatters (I.E "EasyVistaDemo") and add yourself to that group.
 
