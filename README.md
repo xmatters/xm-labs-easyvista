@@ -27,4 +27,10 @@ Click the **+** button next to **Connections** and add a new connection
 </kbd>
 
 
-You can call the connection **xM Connection**, the Authentication Method can be **Basic** and in the **Service Url** field, include the name of your instance. User Name Authentication can be any user in xMatters that has the 
+You can call the connection **xM Connection**, the Authentication Method can be **Basic** and in the **Service Url** field, include the name of your instance. User Name Authentication can be any user in xMatters that has the **REST Web Services User** roles
+
+<kbd>
+    <img src="images/roles.png">
+</kbd>
+
+
