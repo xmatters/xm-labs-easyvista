@@ -81,7 +81,7 @@ Click the **+** button next to **Resources**. You can call the **label** whateve
     <img src="images/edit_comm.png">
 </kbd>
 
-Click on **Inbound integration** and then click on **New Incident** and the bottom you'll find the URL to trigger the integration which you will put in the uri field. ***Note***: *do not enter the entire URL, only the URL that is followed by *** **.com** starting with **/api/.../etc**
+Click on **Inbound integration** and then click on **New Incident** and the bottom you'll find the URL to trigger the integration which you will put in the uri field. ***Note***: *do not enter the entire URL, only the URL that is followed by*  **.com** *starting with* **/api/.../etc**
 
 
 <kbd>
