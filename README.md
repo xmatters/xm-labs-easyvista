@@ -14,12 +14,17 @@ To produce a fully working two way integration with xMatters, configuring EasyVi
 
 First and foremost, you must first create an API REST Connection with EasyVista. You can do that by clicking **Administration** < **REST** < **Connections**
 
+
+
 <kbd>
     <img src="images/rest.png">
 </kbd>
 
 
+
 Click the **+** button next to **Connections** and add a new connection
+
+
 
 
 <kbd>
@@ -27,7 +32,10 @@ Click the **+** button next to **Connections** and add a new connection
 </kbd>
 
 
+
 You can call the connection **xM Connection**, the Authentication Method can be **Basic** and in the **Service Url** field, include the name of your instance. User Name Authentication can be any user in xMatters that has the **REST Web Services User** roles
+
+
 
 <kbd>
     <img src="images/roles.png">
