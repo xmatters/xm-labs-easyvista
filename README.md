@@ -19,7 +19,7 @@ To produce a fully working two way integration with xMatters, configuring EasyVi
 
 
 <kbd>
-    <img src="images/services_edit.png">
+    <img src="images/services.png">
 </kbd>
 
 
