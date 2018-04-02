@@ -18,9 +18,6 @@ To produce a fully working two way integration with xMatters, configuring EasyVi
 1. The fist thing we'll need to do is create a service in xMatters. We'll do this by going to **Administration** < **REST** < **Service**.
 
 
-<kbd>
-    <img src="images/service.png">
-</kbd>
 
 
 
