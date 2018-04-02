@@ -77,6 +77,29 @@ Once this configuration is set up, you can click **Save**
 
 Click the **+** button next to **Resources**. You can call the **label** whatever you want; I have called it **xM Resource**, the service name will be whatever you called your service above, in my case it's **xMatters** and the **Connection Name** will be whatever you named your REST connection above (in my case, it's xM Connection)
 
+In the content, you'll want to add the following JSON payload:
+
+``` {
+  "properties": 
+  {"Incident_Number": "{Incident_Number}",
+    "Urgency_ID": "{Urgency_ID}",
+     "Impact": "{Impact}",
+    "Description": "{myDescription} ",
+    "Category": "{Category}",
+    "Requesting_Person": "{Requesting_Person}",
+    "Department": "{Department}",
+    "Incident_Status": "{Incident_Status}",
+    "Recipient": "{Recipient}",
+    "Recipient_Phone": "{Recipient_Phone}",
+     "SLA":"{SLA}"   
+  },
+  "recipients": [
+    "EasyVistaDemo"
+  ]
+}
+
+```
+
 <kbd>
     <img src="images/edit_resource.png">
 </kbd>
