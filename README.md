@@ -72,13 +72,13 @@ Once this configuration is set up, you can click **Save**
 2. Next, we'll need to create a **Resource** in EasyVista. We will do this by going to **Administration** < **Rest** < **Resources**. 
 
 <kbd>
-    <img src="images/resources.png">
+    <img src="images/resoruces.png">
 </kbd>
 
 Click the **+** button next to **Resources**. You can call the **label** whatever you want; I have called it **xM Resource**, the service name will be whatever you called your service above, in my case it's **xMatters** and the **Connection Name** will be whatever you named your REST connection above (in my case, it's xM Connection)
 
 <kbd>
-    <img src="images/edit_resources.png">
+    <img src="images/edit_resoruces.png.png">
 </kbd>
 
 
