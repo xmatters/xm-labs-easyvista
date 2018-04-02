@@ -78,7 +78,7 @@ Once this configuration is set up, you can click **Save**
 Click the **+** button next to **Resources**. You can call the **label** whatever you want; I have called it **xM Resource**, the service name will be whatever you called your service above, in my case it's **xMatters** and the **Connection Name** will be whatever you named your REST connection above (in my case, it's xM Connection)
 
 <kbd>
-    <img src="images/edit_resoruces.png.png">
+    <img src="images/edit_resource.png">
 </kbd>
 
 
