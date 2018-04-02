@@ -12,6 +12,7 @@ Once the communication plan is imported, you need to create a group in xMatters 
 
 To produce a fully working two way integration with xMatters, configuring EasyVista correctly is key. The configuration with EasyVista is a bit more complex comapred to xMatters. Rest assured, we will go through each configuration step by step in this lab.
 
+***Creating a REST Connection***
 1. First and foremost, you must first create an API REST Connection with EasyVista. You can do that by clicking **Administration** < **REST** < **Connections**
 
 
@@ -44,6 +45,22 @@ You can call the connection **xM Connection**, the Authentication Method can be 
 
 Once this configuration is set up, you can click **Save**
 
+***Creating a Resource***
 
-2. The next thing we'll need to do is edit your current workflow so EasyVista knows how and when to trigger an event in xMatters. In this example, I am editing the workflow **Incident:Database**
+Next, we'll need to create a Resource in EasyVista
+
+
+3. The next thing we'll need to do is edit your current workflow so EasyVista knows how and when to trigger an event in xMatters. In this example, I am editing the workflow **Incident:Database**. 
+
+To add REST xM Connection we just created, click into **REST ACTIONS** and drag the xM Connection box into the workflow. You can name the workflow whatever you want. Here, I have named it **SendtoXM**.
+
+<kbd>
+    <img src="images/workflow_editor.png">
+</kbd>
+
+
+
+<kbd>
+    <img src="images/workflow.png">
+</kbd>
 
