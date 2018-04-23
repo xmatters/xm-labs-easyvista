@@ -21,7 +21,7 @@ Once the communication plan is imported, we'll need to create an Endpoint so xMa
 Click on **Edit Endpoints** and add the your endpoint to the list in your instace. 
 
 <kbd>
-    <img src="images/endpoint.png" width="400>
+    <img src="images/endpoint.png">
 </kbd>
 
 
