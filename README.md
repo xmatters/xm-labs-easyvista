@@ -164,7 +164,7 @@ You can name the workflow whatever you want. Here, I have named it **SendtoXM**.
 You can name the business rule anything you'd like. Here, I named it **"xMatters Action Assignment"**. In the "Field" drop down, select **AVAILABLE_FIELD_1**. Click edit conditon and paste the following SQL:
 
 <kbd>
-    <img src="define_business rule.png">
+    <img src="images/define_business rule.png">
 </kbd>
 
 
