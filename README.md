@@ -40,9 +40,6 @@ Once the communication plan is imported, you need to create a group in xMatters 
 * Once that catagory is created, you'll want to assign it to the corresponding workflow that you'll use to create an incident. In this lab, we'll use **Incidents/Infrastructure/Database** as as or Catagory and **Incident:Database** as our workflow
 
 
-<kbd>
-    <img src="images/catagory.png">
-</kbd>
 
 
 ### Creating a Service
