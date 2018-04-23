@@ -209,11 +209,11 @@ AND A.END_DATE_UT IS NULL
     <img src="images/related_process.png">
 </kbd>
 
-{nbsp} +
++
 
 * Paste the following code into **Delete Assignee**
 
-{nbsp} +
++
 
 
 ```
