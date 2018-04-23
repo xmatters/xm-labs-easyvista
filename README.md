@@ -131,14 +131,16 @@ In the content field, you'll want to add the following xMatters JSON payload. **
 }
 
 ```
-
+kbd>
+    <img src="images/workflow_editor.png">
+</kbd>
 
 
 
 3. The next thing we'll need to do is edit your current workflow so EasyVista knows how and when to trigger an event in xMatters. In this example, I am editing the workflow **Incident:Database**. 
 
 <kbd>
-    <img src="images/workflow_editor.png">
+    <img src="images/workflow.png">
 </kbd>
 
 To add REST xM Connection we just created, click into **REST ACTIONS** and drag the xM Connection box into the workflow. If you don't know how to create a workflow in EasyVista, you can look [here] (https://wiki.easyvista.com/xwiki/bin/view/Documentation/Workflow)
@@ -151,9 +153,4 @@ You can name the workflow whatever you want. Here, I have named it **SendtoXM**.
 
 
 
-
-
-<kbd>
-    <img src="images/workflow.png">
-</kbd>
 
