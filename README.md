@@ -1,7 +1,3 @@
-# xMatters + EasyVista Two Way Integration
-
-The purpose of this xM lab is to set up a functional, two way integration between xMatters and EasyVista
-
 # Prerequisites
 In order to produce a fully working integration you must have a instance of xMatters, EasyVista and basic familiarity with SQL + JavaScript + JSON. You must also create a user profile with the same first name, last name and e-mail address in xMatters and EasyVista.
 
@@ -18,7 +14,7 @@ Once the communication plan is imported, we'll need to create an Endpoint so xMa
     <img src="images/edit_comm.png">
 </kbd>
 
-Click on **Edit Endpoints** and add the your endpoint to the list in your instace. 
+Click on **Edit Endpoints** and add your endpoint to the list in your instance. 
 
 <kbd>
     <img src="images/endpoint.png">
@@ -33,11 +29,11 @@ Once the communication plan is imported, you need to create a group in xMatters 
 
 # Configuring EasyVista
 
-* To produce a fully working two-way integration with xMatters, configuring EasyVista correctly is key. The configuration with EasyVista is a bit more complex comapred to xMatters. Rest assured, we will go through each configuration step by step in this lab.
+* To produce a fully working two-way integration with xMatters, configuring EasyVista correctly is key. The configuration with EasyVista is a bit more complex compared to xMatters. Rest assured, we will go through each configuration step by step in this lab.
 
-### Create a Catagory
+### Create a Category
 
-* You'll want to select/create a Catagory to use in EasyVista if you want the integration to work for specific workflows. You can see how to do that [here](https://wiki.easyvista.com/xwiki/bin/view/Documentation/Incident+Catalog)
+* You'll want to select/create a Category to use in EasyVista if you want the integration to work for specific workflows. You can see how to do that [here](https://wiki.easyvista.com/xwiki/bin/view/Documentation/Incident+Catalog)
 
 * Once that catagory is created, you'll want to assign it to the corresponding workflow that you'll use to create an incident. In this lab, we'll use **Incidents/Infrastructure/Database** as as or Catagory and **Incident:Database** as our workflow
 
@@ -156,7 +152,7 @@ Once the communication plan is imported, you need to create a group in xMatters 
 </kbd>
 
 * To add REST xM Connection we just created, click into **REST ACTIONS** and drag the xM Connection box into the workflow. If you don't know how to create a workflow in EasyVista, you can look [here](https://wiki.easyvista.com/xwiki/bin/view/Documentation/Workflow)
-You can name the workflow whatever you want. Here, I have named it **SendtoXM**. The entry status should be **In Progress** The REST CONNECTION should be **xM Connection** and the resource should be **xM Resource**. The parameters that we are sending to xMatters should be populated under "parameters" (the JSON we defined earler). Once you make sure the values match the parameters, you can click "Confirm Changes".
+You can name the workflow whatever you want. Here, I have named it **SendtoXM**. The entry status should be **In Progress** The REST CONNECTION should be **xM Connection** and the resource should be **xM Resource**. The parameters that we are sending to xMatters should be populated under "parameters" (the JSON we defined earlier). Once you make sure the values match the parameters, you can click "Confirm Changes".
 
 <kbd>
     <img src="images/workflow_editor.png" width="400">
@@ -180,7 +176,7 @@ You can name the workflow whatever you want. Here, I have named it **SendtoXM**.
 </kbd>
 
 
-* Click edit conditon and paste the following SQL:
+* Click edit condition and paste the following SQL:
 
 ```
 IF EXISTS (
@@ -240,7 +236,7 @@ where request_id in (@ID@)
 
 ### Two Way Integration in Action
 
-* From the EasyVista home page, click on **New < Incident**. Fill out the incident form below like so. **Note** make sure the **Catagory** matches catagory you created. In our case it is: **Incidents/Infrastructure/Database**. Make sure the rest of the mandatory fields are filled out like the screen shot below and click **Assign**
+* From the EasyVista home page, click on **New < Incident**. Fill out the incident form below like so. **Note** make sure the **Category** matches category you created. In our case it is: **Incidents/Infrastructure/Database**. Make sure the rest of the mandatory fields are filled out like the screen shot below and click **Assign**
 
 
 <kbd>
