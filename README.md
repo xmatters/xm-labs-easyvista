@@ -185,3 +185,43 @@ END
     <img src="images/SQL.png">
 </kbd>
 
+### Creating a Related Process
+
+5. Next, we'll need to create a related process in EasyVista. We'll do this by going to **Administration < Business Rules < Related Process** . Click the **+** button to add a new Related Process. We can call this **xMatters Action Assignment** as well. Once the Process is created, click the drop down **Automatic Actions** and select **Internal Step Update**. We will need two of these steps. Name one **Delete Assignee** and the other **Update Action Assignee**. Paste the following SQL code into **Update Action Assignee**
+
+``` 
+UPDATE A
+SET DONE_BY_ID = E.EMPLOYEE_ID, START_DATE_UT = GETUTCDATE()
+FROM AM_ACTION A
+INNER JOIN SD_REQUEST R 
+   ON R.REQUEST_ID = A.REQUEST_ID
+INNER JOIN AM_EMPLOYEE E
+   ON UPPER(E.LOGIN) = UPPER(R.AVAILABLE_FIELD_1)
+WHERE R.REQUEST_ID = @ID@
+AND A.END_DATE_UT IS NULL
+
+```
+* Click Save
+
+* Be sure that the **Step Name, Exit Value and Separator*** match the screen shot below
+
+<kbd>
+    <img src="images/related_process.png">
+</kbd>
+
+
+* Paste the following code into **Delete Assignee**
+
+```
+
+Update sd_request
+set AVAILABLE_FIELD_1 = null
+where request_id in (@ID@)
+
+```
+
+
+
+
+
+
