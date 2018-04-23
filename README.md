@@ -41,7 +41,7 @@ Once the communication plan is imported, you need to create a group in xMatters 
 
 
 <kbd>
-    <img src="images/catagory1.png">
+    <img src="images/catagory1.png" width="400">
 </kbd>
 
 ### Creating a Service
@@ -50,7 +50,7 @@ Once the communication plan is imported, you need to create a group in xMatters 
 
 
 <kbd>
-    <img src="images/services.png">
+    <img src="images/services.png" width="400">
 </kbd>
 
 
@@ -58,7 +58,7 @@ Once the communication plan is imported, you need to create a group in xMatters 
 * Click the **+** button next to **Services** and configure the service like so:
 
 <kbd>
-    <img src="images/service_edit.png">
+    <img src="images/service_edit.png" width="400">
 </kbd>
 
 * Call the Service Name **xMatters**, set the Authentication Method the **Basic** and the Service Url should be the URL to your xMatters instance name. Click **Save**
@@ -71,7 +71,7 @@ Once the communication plan is imported, you need to create a group in xMatters 
 
 
 <kbd>
-    <img src="images/rest.png">
+    <img src="images/rest.png" width="400">
 </kbd>
 
 
@@ -82,7 +82,7 @@ Once the communication plan is imported, you need to create a group in xMatters 
 
 
 <kbd>
-    <img src="images/connection.png">
+    <img src="images/connection.png" width="400">
 </kbd>
 
 
@@ -92,7 +92,7 @@ Once the communication plan is imported, you need to create a group in xMatters 
 
 
 <kbd>
-    <img src="images/roles.png">
+    <img src="images/roles.png" width="400">
 </kbd>
 
 
@@ -103,20 +103,20 @@ Once the communication plan is imported, you need to create a group in xMatters 
 2. Next, we'll need to create a **Resource** in EasyVista. We will do this by going to **Administration** < **Rest** < **Resources**. 
 
 <kbd>
-    <img src="images/resoruces.png">
+    <img src="images/resoruces.png" width="400">
 </kbd>
 
 * Click the **+** button next to **Resources**. You can call the **label** whatever you want; I have called it **xM Resource**, the service name will be whatever you called your service above, in my case it's **xMatters** and the **Connection Name** will be whatever you named your REST connection above (in my case, it's xM Connection). The uri is how EasyVista will trigger the xMatters integration. This can be found by heading to your xMatters instance, clicking on **Developer**, next to your **EasyVista** communication plan, click **Edit** and then **Integration Builder**.
 
 <kbd>
-    <img src="images/edit_comm.png">
+    <img src="images/edit_comm.png" width="400">
 </kbd>
 
 * Click on **Inbound integration** and then click on **New Incident** and the bottom you'll find the URL to trigger the integration which you will put in the uri field. ***Note***: *do not enter the entire URL, only the URL that is followed by*  **.com** *starting with* **/api/.../etc**
 
 
 <kbd>
-    <img src="images/trigger.png">
+    <img src="images/trigger.png" width="400">
 </kbd>
 
 * In the content field, you'll want to add the following xMatters JSON payload. ***Note** the `recipients` value is going to be the group you have created in xMatters that you are trying to target. In my case, the group name is **EasyVistaDemo**
@@ -143,21 +143,21 @@ Once the communication plan is imported, you need to create a group in xMatters 
 ```
 
 <kbd>
-    <img src="images/edit_resource.png">
+    <img src="images/edit_resource.png" width="400">
 </kbd>
 
 
 3. The next thing we'll need to do is edit your current workflow so EasyVista knows how and when to trigger an event in xMatters. In this example, I am editing the workflow **Incident:Database**. 
 
 <kbd>
-    <img src="images/workflow.png">
+    <img src="images/workflow.png" width="400">
 </kbd>
 
 * To add REST xM Connection we just created, click into **REST ACTIONS** and drag the xM Connection box into the workflow. If you don't know how to create a workflow in EasyVista, you can look [here] (https://wiki.easyvista.com/xwiki/bin/view/Documentation/Workflow)
 You can name the workflow whatever you want. Here, I have named it **SendtoXM**. The entry status should be **In Progress** The REST CONNECTION should be **xM Connection** and the resource should be **xM Resource**. The parameters that we are sending to xMatters should be populated under "parameters" (the JSON we defined earler). Once you make sure the values match the parameters, you can click "Confirm Changes".
 
 <kbd>
-    <img src="images/workflow_editor.png">
+    <img src="images/workflow_editor.png" width="400">
 </kbd>
 
 
@@ -168,13 +168,13 @@ You can name the workflow whatever you want. Here, I have named it **SendtoXM**.
 
 
 <kbd>
-    <img src="images/create_business rule.png">
+    <img src="images/create_business rule.png" width="400">
 </kbd>
 
 * You can name the business rule anything you'd like. Here, I named it **"xMatters Action Assignment"**. In the "Field" drop down, select **AVAILABLE_FIELD_1**. Click edit conditon and paste the following SQL:
 
 <kbd>
-    <img src="images/define_business rule.png">
+    <img src="images/define_business rule.png" width="400">
 </kbd>
 
 
@@ -192,7 +192,7 @@ END
 ```
 
 <kbd>
-    <img src="images/SQL.png">
+    <img src="images/SQL.png" width="400">
 </kbd>
 
 ### Creating a Related Process
@@ -216,7 +216,7 @@ AND A.END_DATE_UT IS NULL
 * Be sure that the **Step Name, Exit Value and Separator** match the screen shot below
 
 <kbd>
-    <img src="images/related_process.png">
+    <img src="images/related_process.png" width="400">
 </kbd>
 
 
@@ -232,7 +232,7 @@ where request_id in (@ID@)
 ```
 
 <kbd>
-    <img src="images/delete_assignee.png">
+    <img src="images/delete_assignee.png" width="400">
 </kbd>
 
 
@@ -242,24 +242,24 @@ where request_id in (@ID@)
 
 
 <kbd>
-    <img src="images/incident.png">
+    <img src="images/incident.png" width="400">
 </kbd>
 
 * Once **Assign** is clicked, it will automatically generate a group. Do not modfiy the group; just click **Finish**
 
 
 <kbd>
-    <img src="images/group.png">
+    <img src="images/group.png" width="400">
 </kbd>
 
 * Once the incident is opened, you should receive a notification from xMatters
 
 <kbd>
-    <img src="images/noti2.png">
+    <img src="images/noti2.png" width="400">
 </kbd>
 
 <kbd>
-    <img src="images/noti1.png">
+    <img src="images/noti1.png" width="400">
 </kbd>
 
 
@@ -267,7 +267,7 @@ where request_id in (@ID@)
 
 
 <kbd>
-    <img src="images/assigned.png">
+    <img src="images/assigned.png" width="400">
 </kbd>
 
 
