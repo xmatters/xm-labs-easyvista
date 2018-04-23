@@ -15,7 +15,7 @@ To get started with the integration with EasyVista, you must first [import](http
 Once the communication plan is imported, we'll need to create an Endpoint so xMatters can talk to EasyVista. We'll do that by navigating to the integration builder. 
 
 <kbd>
-    <img src="images/edit_comm.png" width="400>
+    <img src="images/edit_comm.png">
 </kbd>
 
 Click on **Edit Endpoints** and add the your endpoint to the list in your instace. 
