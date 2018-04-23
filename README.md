@@ -272,6 +272,10 @@ where request_id in (@ID@)
     <img src="images/assigned.png" width="400">
 </kbd>
 
+# Troubleshooting
+
+* View xMatters Activity Stream to determine issues with EasyVista connectivity.
+
 
 
 
