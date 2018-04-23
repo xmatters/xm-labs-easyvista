@@ -15,13 +15,13 @@ To get started with the integration with EasyVista, you must first [import](http
 Once the communication plan is imported, we'll need to create an Endpoint so xMatters can talk to EasyVista. We'll do that by navigating to the integration builder. 
 
 <kbd>
-    <img src="images/edit_comm.png">
+    <img src="images/edit_comm.png" width="400>
 </kbd>
 
 Click on **Edit Endpoints** and add the your endpoint to the list in your instace. 
 
 <kbd>
-    <img src="images/endpoint.png">
+    <img src="images/endpoint.png" width="400>
 </kbd>
 
 ***Note*** *the user must have the REST API use profile in EasyVista* in this case, I created a user in EasyVista named **RESTAPI** with the *REST API* role. If you're not sure how to do this, you can go [here](https://wiki.easyvista.com/xwiki/bin/view/Documentation/WebService+REST#HBestPractice) and click on **Best Practice**
