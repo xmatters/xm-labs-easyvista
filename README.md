@@ -152,5 +152,39 @@ You can name the workflow whatever you want. Here, I have named it **SendtoXM**.
 
 
 
+### Creating a Business Rule
+
+4. In order for a proper two way integration to successfully work, we'll need to create a business rule in EasyVista. We'll do that by clicking **Administration < Business Rules < Definition**. Click the **+** button to create a new business rule. Select the table **SD_Request**
+
+
+<kbd>
+    <img src="images/create_business rule.png">
+</kbd>
+
+You can name the business rule anything you'd like. Here, I named it **"xMatters Action Assignment"**. In the "Field" drop down, select **AVAILABLE_FIELD_1**. Click edit conditon and paste the following SQL:
+
+<kbd>
+    <img src="define_business rule.png">
+</kbd>
+
+
+Click edit conditon and paste the following SQL:
+
+```
+IF EXISTS (
+	SELECT R.REQUEST_ID FROM INSERTED R
+	WHERE ISNULL ( R.AVAILABLE_FIELD_1, '' ) <> ''
+)
+BEGIN
+@@FIRETRIGGER@@
+END
+
+```
+
+<kbd>
+    <img src="SQL.png">
+</kbd>
+
+
 
 
