@@ -239,7 +239,7 @@ where request_id in (@ID@)
 
 ### Two Way Integration in Action
 
-* From the EasyVista home page, click on **New < Incident**. Fill out the incident form below like so. **Note** make sure the **Catagory** matches
+* From the EasyVista home page, click on **New < Incident**. Fill out the incident form below like so. **Note** make sure the **Catagory** matches catagory you created. In our case it is: **Incidents/Infrastructure/Database**
 
 
 
