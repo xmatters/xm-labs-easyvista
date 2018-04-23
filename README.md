@@ -255,18 +255,19 @@ where request_id in (@ID@)
 * Once the incident is opened, you should receive a notification from xMatters
 
 <kbd>
-    <img src="images/noti1.png">
+    <img src="images/noti2.png">
 </kbd>
 
 <kbd>
-    <img src="images/noti2.png">
+    <img src="images/noti1.png">
 </kbd>
+
 
 * If you click **Acknowledge** EasyVista will assign you the work order like so:
 
 
 <kbd>
-    <img src="images/assigned.png.png">
+    <img src="images/assignedpng">
 </kbd>
 
 
