@@ -221,6 +221,11 @@ where request_id in (@ID@)
 
 ```
 
+<kbd>
+    <img src="images/delete_assignee.png">
+</kbd>
+
+
 
 
 
