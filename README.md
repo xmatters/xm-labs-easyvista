@@ -168,7 +168,7 @@ You can name the business rule anything you'd like. Here, I named it **"xMatters
 </kbd>
 
 
-Click edit conditon and paste the following SQL:
+*Click edit conditon and paste the following SQL:
 
 ```
 IF EXISTS (
