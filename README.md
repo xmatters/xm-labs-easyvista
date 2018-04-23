@@ -3,7 +3,7 @@
 The purpose of this xM lab is to set up a functional, two way integration between xMatters and EasyVista
 
 # Prerequisites
-In order to produce a fully working integration you must have a instance of xMatters, EasyVista and basic familiarity with SQL + JavaScript + JSON
+In order to produce a fully working integration you must have a instance of xMatters, EasyVista and basic familiarity with SQL + JavaScript + JSON. You must also create a user profile with the same first name, last name and e-mail address in xMatters and EasyVista.
 
 # Configuring xMatters
 
@@ -31,7 +31,11 @@ Once the communication plan is imported, you need to create a group in xMatters 
 
 # Configuring EasyVista
 
-To produce a fully working two-way integration with xMatters, configuring EasyVista correctly is key. The configuration with EasyVista is a bit more complex comapred to xMatters. Rest assured, we will go through each configuration step by step in this lab.
+* To produce a fully working two-way integration with xMatters, configuring EasyVista correctly is key. The configuration with EasyVista is a bit more complex comapred to xMatters. Rest assured, we will go through each configuration step by step in this lab.
+
+### Create a Catagory
+
+* You'll want to select/create a Catagory to use in EasyVista if you want the integration to work for specific workflows. You can see how to do that [here] (https://wiki.easyvista.com/xwiki/bin/view/Documentation/Incident+Catalog)
 
 
 ### Creating a Service
@@ -45,13 +49,13 @@ To produce a fully working two-way integration with xMatters, configuring EasyVi
 
 
 
-Click the **+** button next to **Services** and configure the service like so:
+* Click the **+** button next to **Services** and configure the service like so:
 
 <kbd>
     <img src="images/service_edit.png">
 </kbd>
 
-Call the Service Name **xMatters**, set the Authentication Method the **Basic** and the Service Url should be the URL to your xMatters instance name. Click **Save**
+* Call the Service Name **xMatters**, set the Authentication Method the **Basic** and the Service Url should be the URL to your xMatters instance name. Click **Save**
 
 
 ### Creating a REST Connection
@@ -66,7 +70,7 @@ Call the Service Name **xMatters**, set the Authentication Method the **Basic** 
 
 
 
-Click the **+** button next to **Connections** and add a new connection
+* Click the **+** button next to **Connections** and add a new connection
 
 
 
@@ -86,7 +90,7 @@ You can call the connection **xM Connection**, the Authentication Method can be 
 </kbd>
 
 
-Once this configuration is set up, you can click **Save**
+* Once this configuration is set up, you can click **Save**
 
 ### Creating a Resource
 
@@ -96,20 +100,20 @@ Once this configuration is set up, you can click **Save**
     <img src="images/resoruces.png">
 </kbd>
 
-Click the **+** button next to **Resources**. You can call the **label** whatever you want; I have called it **xM Resource**, the service name will be whatever you called your service above, in my case it's **xMatters** and the **Connection Name** will be whatever you named your REST connection above (in my case, it's xM Connection). The uri is how EasyVista will trigger the xMatters integration. This can be found by heading to your xMatters instance, clicking on **Developer**, next to your **EasyVista** communication plan, click **Edit** and then **Integration Builder**.
+* Click the **+** button next to **Resources**. You can call the **label** whatever you want; I have called it **xM Resource**, the service name will be whatever you called your service above, in my case it's **xMatters** and the **Connection Name** will be whatever you named your REST connection above (in my case, it's xM Connection). The uri is how EasyVista will trigger the xMatters integration. This can be found by heading to your xMatters instance, clicking on **Developer**, next to your **EasyVista** communication plan, click **Edit** and then **Integration Builder**.
 
 <kbd>
     <img src="images/edit_comm.png">
 </kbd>
 
-Click on **Inbound integration** and then click on **New Incident** and the bottom you'll find the URL to trigger the integration which you will put in the uri field. ***Note***: *do not enter the entire URL, only the URL that is followed by*  **.com** *starting with* **/api/.../etc**
+* Click on **Inbound integration** and then click on **New Incident** and the bottom you'll find the URL to trigger the integration which you will put in the uri field. ***Note***: *do not enter the entire URL, only the URL that is followed by*  **.com** *starting with* **/api/.../etc**
 
 
 <kbd>
     <img src="images/trigger.png">
 </kbd>
 
-In the content field, you'll want to add the following xMatters JSON payload. ***Note** the `recipients` value is going to be the group you have created in xMatters that you are trying to target. In my case, the group name is **EasyVistaDemo**
+* In the content field, you'll want to add the following xMatters JSON payload. ***Note** the `recipients` value is going to be the group you have created in xMatters that you are trying to target. In my case, the group name is **EasyVistaDemo**
 
 ``` {
   "properties": 
@@ -143,7 +147,7 @@ In the content field, you'll want to add the following xMatters JSON payload. **
     <img src="images/workflow.png">
 </kbd>
 
-To add REST xM Connection we just created, click into **REST ACTIONS** and drag the xM Connection box into the workflow. If you don't know how to create a workflow in EasyVista, you can look [here] (https://wiki.easyvista.com/xwiki/bin/view/Documentation/Workflow)
+* To add REST xM Connection we just created, click into **REST ACTIONS** and drag the xM Connection box into the workflow. If you don't know how to create a workflow in EasyVista, you can look [here] (https://wiki.easyvista.com/xwiki/bin/view/Documentation/Workflow)
 You can name the workflow whatever you want. Here, I have named it **SendtoXM**. The entry status should be **In Progress** The REST CONNECTION should be **xM Connection** and the resource should be **xM Resource**. The parameters that we are sending to xMatters should be populated under "parameters" (the JSON we defined earler). Once you make sure the values match the parameters, you can click "Confirm Changes".
 
 <kbd>
@@ -161,7 +165,7 @@ You can name the workflow whatever you want. Here, I have named it **SendtoXM**.
     <img src="images/create_business rule.png">
 </kbd>
 
-You can name the business rule anything you'd like. Here, I named it **"xMatters Action Assignment"**. In the "Field" drop down, select **AVAILABLE_FIELD_1**. Click edit conditon and paste the following SQL:
+* You can name the business rule anything you'd like. Here, I named it **"xMatters Action Assignment"**. In the "Field" drop down, select **AVAILABLE_FIELD_1**. Click edit conditon and paste the following SQL:
 
 <kbd>
     <img src="images/define_business rule.png">
@@ -226,6 +230,9 @@ where request_id in (@ID@)
 </kbd>
 
 
+### Two Way Integration in Action
+
+* From the EasyVista home page, click on **New < Incident**. Fill out the incident form below like so. **Note** make sure the **Catagory** matches
 
 
 
