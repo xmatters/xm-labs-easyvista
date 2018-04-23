@@ -182,9 +182,6 @@ END
 ```
 
 <kbd>
-    <img src="SQL.png">
+    <img src="images/SQL.png">
 </kbd>
-
-
-
 
