@@ -267,7 +267,7 @@ where request_id in (@ID@)
 
 
 <kbd>
-    <img src="images/assignedpng">
+    <img src="images/assigned.png">
 </kbd>
 
 
