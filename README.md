@@ -1,3 +1,5 @@
+# xMatters + EasyVista Two Way Integration 
+
 # Prerequisites
 In order to produce a fully working integration you must have a instance of xMatters, EasyVista and basic familiarity with SQL + JavaScript + JSON. You must also create a user profile with the same first name, last name and e-mail address in xMatters and EasyVista.
 
