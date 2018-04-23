@@ -60,7 +60,7 @@ Once the communication plan is imported, you need to create a group in xMatters 
 * Click the **+** button next to **Services** and configure the service like so:
 
 <kbd>
-    <img src="images/service_edit.png" width="400">
+    <img src="images/service_edit1.png" width="400">
 </kbd>
 
 * Call the Service Name **xMatters**, set the Authentication Method the **Basic** and the Service Url should be the URL to your xMatters instance name. Click **Save**
@@ -84,7 +84,7 @@ Once the communication plan is imported, you need to create a group in xMatters 
 
 
 <kbd>
-    <img src="images/connection.png" width="400">
+    <img src="images/connection1.png" width="400">
 </kbd>
 
 
@@ -118,7 +118,7 @@ Once the communication plan is imported, you need to create a group in xMatters 
 
 
 <kbd>
-    <img src="images/trigger.png" width="400">
+    <img src="images/trigger1.png" width="400">
 </kbd>
 
 * In the content field, you'll want to add the following xMatters JSON payload. ***Note** the `recipients` value is going to be the group you have created in xMatters that you are trying to target. In my case, the group name is **EasyVistaDemo**
