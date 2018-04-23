@@ -118,7 +118,7 @@ Once the communication plan is imported, you need to create a group in xMatters 
 
 
 <kbd>
-    <img src="images/trigger_1.png" width="400">
+    <img src="images/trigger_1.png">
 </kbd>
 
 * In the content field, you'll want to add the following xMatters JSON payload. ***Note** the `recipients` value is going to be the group you have created in xMatters that you are trying to target. In my case, the group name is **EasyVistaDemo**
