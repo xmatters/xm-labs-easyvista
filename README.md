@@ -155,7 +155,7 @@ Once the communication plan is imported, you need to create a group in xMatters 
     <img src="images/workflow.png" width="400">
 </kbd>
 
-* To add REST xM Connection we just created, click into **REST ACTIONS** and drag the xM Connection box into the workflow. If you don't know how to create a workflow in EasyVista, you can look [here] (https://wiki.easyvista.com/xwiki/bin/view/Documentation/Workflow)
+* To add REST xM Connection we just created, click into **REST ACTIONS** and drag the xM Connection box into the workflow. If you don't know how to create a workflow in EasyVista, you can look [here](https://wiki.easyvista.com/xwiki/bin/view/Documentation/Workflow)
 You can name the workflow whatever you want. Here, I have named it **SendtoXM**. The entry status should be **In Progress** The REST CONNECTION should be **xM Connection** and the resource should be **xM Resource**. The parameters that we are sending to xMatters should be populated under "parameters" (the JSON we defined earler). Once you make sure the values match the parameters, you can click "Confirm Changes".
 
 <kbd>
