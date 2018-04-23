@@ -213,7 +213,7 @@ AND A.END_DATE_UT IS NULL
 ```
 * Click Save
 
-* Be sure that the **Step Name, Exit Value and Separator*** match the screen shot below
+* Be sure that the **Step Name, Exit Value and Separator** match the screen shot below
 
 <kbd>
     <img src="images/related_process.png">
