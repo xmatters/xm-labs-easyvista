@@ -238,8 +238,36 @@ where request_id in (@ID@)
 
 ### Two Way Integration in Action
 
-* From the EasyVista home page, click on **New < Incident**. Fill out the incident form below like so. **Note** make sure the **Catagory** matches catagory you created. In our case it is: **Incidents/Infrastructure/Database**
+* From the EasyVista home page, click on **New < Incident**. Fill out the incident form below like so. **Note** make sure the **Catagory** matches catagory you created. In our case it is: **Incidents/Infrastructure/Database**. Make sure the rest of the mandatory fields are filled out like the screen shot below and click **Assign**
 
+
+<kbd>
+    <img src="images/incident.png">
+</kbd>
+
+* Once **Assign** is clicked, it will automatically generate a group. Do not modfiy the group; just click **Finish**
+
+
+<kbd>
+    <img src="images/group.png">
+</kbd>
+
+* Once the incident is opened, you should receive a notification from xMatters
+
+<kbd>
+    <img src="images/noti1.png">
+</kbd>
+
+<kbd>
+    <img src="images/noti2.png">
+</kbd>
+
+* If you click **Acknowledge** EasyVista will assign you the work order like so:
+
+
+<kbd>
+    <img src="images/assigned.png.png">
+</kbd>
 
 
 
