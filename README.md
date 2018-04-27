@@ -1,5 +1,7 @@
 # xMatters + EasyVista Two Way Integration 
 
+* This closed loop integration with EasyVista will allow a xMatters event to be triggered once a EasyVista incident is opened up. Once the EasyVista incident has been created, xMatters will notify appropriate person on call. The response option "Acknowledge" allows you to assign yourself to the current work order in EasyVista. "Resolve" will allow you to close out the entire incident.
+
 # Prerequisites
 In order to produce a fully working integration you must have a instance of xMatters, EasyVista and basic familiarity with SQL + JavaScript + JSON. You must also create a user profile with the same first name, last name and e-mail address in xMatters and EasyVista.
 
